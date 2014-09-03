@@ -1,5 +1,6 @@
-FLAGS = -interaction=batchmode --shell-escape
-NUMBERS = 1 2 3
+#FLAGS = -interaction=batchmode --shell-escape
+FLAGS = --shell-escape
+NUMBERS = 1 # 2 3
 TEXER = xelatex
 
 main: rapport
