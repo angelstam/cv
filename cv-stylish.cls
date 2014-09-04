@@ -54,7 +54,7 @@
   \addtolength{\voffset}{-0.5cm} % Adjust the vertical offset - less whitespace at the top of the page
   %\addtolength{\textheight}{4cm} % Adjust the text height - less whitespace at the bottom of the page
   %\addtolength{\textwidth}{-10cm}
- \fancyheadoffset{2.5cm}
+ \fancyheadoffset{1.5cm}
   %---------------------------------------------------------------------
   %  FOOTER SECTION
   %---------------------------------------------------------------------
