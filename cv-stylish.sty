@@ -9,13 +9,26 @@
 
 \NewEnviron{InfoTable}{%
   \begin{tikzpicture}
-    \node (table) [inner sep=0mm] {
+    \node (table) [inner sep=2mm] {
       \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
         \BODY
       \end{tabularx}
     };
     % \clip [rounded corners=.5cm] (0,0) rectangle coordinate (centerpoint) (5,7.5cm); 
     \draw [gray, rounded corners=1mm, line width=0mm, fill=gray, opacity=.1] 
+    (table.north west) rectangle (table.south east);
+  \end{tikzpicture}
+}
+
+\NewEnviron{JobTable}{%
+  \begin{tikzpicture}
+    \node (table) [inner sep=2mm] {
+      \begin{tabularx}{0.97\linewidth}{>{\scshape}p{6cm}X}
+        \BODY
+      \end{tabularx}
+    };
+    % \clip [rounded corners=.5cm] (0,0) rectangle coordinate (centerpoint) (5,7.5cm);
+    \draw [gray, rounded corners=1mm, line width=0mm, fill=gray, opacity=.1]
     (table.north west) rectangle (table.south east);
   \end{tikzpicture}
 }
