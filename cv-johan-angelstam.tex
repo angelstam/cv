@@ -1,5 +1,6 @@
 \documentclass{cv-stylish}
 \usepackage{cv-stylish}
+\usepackage{changepage}
 
 %---------------------------------------------------------------------
 %  FOOTER SECTION
@@ -23,7 +24,7 @@ Gammelbo gård 338 {\large\textperiodcentered} 711 98 Ramsberg {\large\textperio
 
 \header{Johan Angelstam} % Your name at the top
 
-%\vspace{1.0cm} % Extra whitespace after the large name at the top
+\vspace{1.0cm} % Extra whitespace after the large name at the top
 
 %---------------------------------------------------------------------
 %	OBJECTIVE
@@ -31,9 +32,41 @@ Gammelbo gård 338 {\large\textperiodcentered} 711 98 Ramsberg {\large\textperio
 
 %\section{Objective}
 
+\begin{adjustwidth}{1cm}{1cm}
 %A position in the field of computers with special interests in
 %business applications \\ programming, information processing, and
-%management systems. 
+%management systems.
+
+% Först: erfarenhet, utbildning för att ge den) som läser en mycket
+% generell bild av vem du är.
+% Sedan: konkretisera och specificera dina viktigaste erfarenheter och
+% kompetenser.
+
+I’m a full-stack developer with more than 20 years of experience in
+both front-end and back-end development, with a strong background
+working on both new and legacy systems. I pay great attention to
+details and I’m both persistent and determined when working towards
+clear and well-motivated goals. I have been involved in projects of
+all sizes, from small companies where being pragmatic and flexible is
+key, to process-heavy projects towards telecom. Skilled in developing
+microservices and automated testing. As a team player, I am always
+eager to learn and adapt to new technologies and methodologies and I’m
+also passionate about sharing my knowledge and experience with my team
+and community. Big interest right now are around DevOps, CI/CD and
+automation.
+
+% I like finding easy to understand solutions to user need.
+
+% I am easy going and can adapt to the situation. I pride myself in
+% being a fast learner and finding the essence of a subject. This along
+% with my drive for for improvements has made me into an adapt software
+% engineer who is not afraid to venture out of my comfort zone trying
+% new things.
+
+% I'm a full-stack developer with extensive experience in both front-end
+% and back-end development.
+
+\end{adjustwidth}
 
 %---------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -44,56 +77,89 @@ Gammelbo gård 338 {\large\textperiodcentered} 711 98 Ramsberg {\large\textperio
 
 \begin{JobTable}
   % Org.nr: 556179-5161
-  June 2021 --- Present & \hfill Remote, Stockholm, Sweden \\
+  June 2021 --- September 2023 & \hfill Full-Remote, Stockholm, Sweden \\
   \multicolumn{2}{X}{\hspace{5mm} \textbf{Giesecke+Devrient Mobile Security Sweden AB}} \\[3pt]
   \hspace{5mm} \textbf{Software Engineer}
-  & \hfill Java, Spring Boot, Oracle, Jenkins, Bitbucket \\
+  & \hfill Java · Spring Boot · Oracle · Jenkins · Ansible · Docker · Katalon \\
 \end{JobTable}
-\begin{tabularx}{0.97\linewidth}{X}
+\begin{adjustwidth}{0.015\linewidth}{0.015\linewidth}
 % I have gathered work experience in the following areas:
-\begin{compactitem}
-  \item Developing a back-end for managing eSIM profiles in Java and
-    Spring Boot.
-  \item Build automation with Jenkins multi-branch pipeline and Bitbucket.
-\end{compactitem}
-\end{tabularx}
+Giesecke+Devrient (G+D) is a global company that specializes in
+security technology, particularly in the areas of payment,
+connectivity, identities, and digital infrastructures. G+D is known
+for its high-quality products and services, and its commitment to
+innovation and customer satisfaction.
 
+As part of a team that implements and test new features in G+D Mobile
+Security's GSMA compliant back-end for managing eSIM profiles for
+remote provisioning, I
+
+\begin{compactitem}
+  \item developed new features using Java with Spring Boot and Oracle in
+    microservices
+  \item developed automated tests for new features in Unit, Integration and
+    System testing levels using Java, Spring Boot, Katalon and Docker
+  \item improved and maintained our continuous integration, delivery
+    and automated testing pipelines using Jenkins multi-branch
+    pipeline and Bitbucket
+  \item analyzed and improved code safety and security after routine checks
+\end{compactitem}
+\end{adjustwidth}
+
+\vspace{1em}
 \begin{JobTable}
-  October 2015 --- May 2020 & \hfill Lindesberg, Sweden \\[3pt]
+  October 2015 --- September 2020 & \hfill Lindesberg, Sweden \\[3pt]
   \multicolumn{2}{X}{\hspace{5mm} \textbf{Followit Sweden AB}} \\[3pt]
   \hspace{5mm} \textbf{Software Engineer}
-  & \hfill C\#, TypeScript, PHP, MySQL, MSSQL, JavaScript, C \\
+  & \hfill C\# · TypeScript · PHP · MySQL · MSSQL · JavaScript · C \\
   % \multicolumn{2}{X}{\hspace{5mm}\em{Systemutvecklare och programvarukonstruktör}} \\
 \end{JobTable}
-\begin{tabularx}{0.97\linewidth}{X}
+\begin{adjustwidth}{0.015\linewidth}{0.015\linewidth}
 % I have gathered work experience in the following areas:
+% Utveckling av webbapplikationer byggda med Angular och
+% Typescript. API:er byggda med JSON-baserat REST API mot existerande
+% back-end. Back-end byggda med C\#/SQL Server och PHP/MySQL och
+% integrationer där i mellan. Drift av Linux- och
+% Windows-servrar. C\#, Javascript, Node.js, PHP, HTML/CSS, Bash,
+% Git, Typescript, Angular, MySQL, SQL, APIs, Linux, C\#, Nancy, NancyFx,
+% PHP
+
 \begin{compactitem}
-  \item Developing customer interfaces (C\#, TypeScript), back-ends
-    and databases for GPS-tracking units.
+  \item Architecting, developing and supporting: customer interfaces in
+    C\# and TypeScript; back-ends in C\# and PHP; and databases for
+    GPS-tracking units.
   \item Developing databases and interfaces for managing end-customer
     subscriptions and b2b subscriptions packaged to end-customers.
-  \item Setting up  a CI/CD pipeline using Gitolite and Jenkins for the C\#
+  \item Integrations with for example Google Maps, a system for managing
+    SIM-subscriptions and financial systems Visma and Fortnox.
+  \item Setting up a CI/CD pipeline using Gitolite and Jenkins for the C\#
     back-end of a mobile app.
   \item Managing the company's Git server and educating others on the
     internal use of version control and Git.
+  \item Optimized MySQL storage performance using ZFS.
+  \item Deployments on VMWare environments and on dedicated Linux and
+    Windows servers.
+  \item Manage and configure VMware ESXi.
 \end{compactitem}
-\end{tabularx}
+\end{adjustwidth}
 
+\vspace{1em}
 \begin{JobTable}
   August 2006 --- September 2015 & \hfill Lindesberg, Sweden \\[3pt]
   \multicolumn{2}{X}{\hspace{5mm} \textbf{Followit Lindesberg AB}} \\[3pt]
-  \hspace{5mm} \textbf{Software Developer} & \hfill PHP, MySQL,
-  JavaScript, Java (J2ME), C \\
+  \hspace{5mm} \textbf{Software Developer}
+  & \hfill PHP · MySQL · JavaScript · Java (J2ME) · C \\
 \end{JobTable}
-\begin{tabularx}{0.97\linewidth}{X}
+\begin{adjustwidth}{0.015\linewidth}{0.015\linewidth}
 % I have gathered work experience in the following areas:
+% Utveckling av API, back-end och administrationsverktyg byggda med PHP/MySQL, för datainsamling från GSM- och Iridium-baserade sändare. Utveckling av app för spårning byggd med J2ME. Administration av Gitolite. Drift av Linux- och Windows-servrar och administration av Windows AD.<br/>Java/Scala, Javascript, PHP, HTML/CSS, Git, MySQL, APIs, Linux
 \begin{compactitem}
   \item Creating three generations of systems for receiving data from
     GPS-tracking units sending data by SMS, GPRS and the Iridium
     commercial communication satellite system format SBD.
     The systems, written in PHP, store the received data in a MySQL
     database, contain a web based administration, customer website
-    with maps (Google, WMS and ArcIMS maps), the ability to forward
+    with maps using \emph{Google Maps}, \emph{WMS} and \emph{ArcIMS} map data, the ability to forward
     data to the customers e-mail and production support
     systems. Responsable for continuously supporting, running,
     maintaining and improving the systems, on Linux and Windows
@@ -102,7 +168,7 @@ Gammelbo gård 338 {\large\textperiodcentered} 711 98 Ramsberg {\large\textperio
     internal use of version control and Git.
   %\item Some experience coding for Microchip PIC18 in C.
 \end{compactitem}
-\end{tabularx}
+\end{adjustwidth}
 
 
 %\vspace{12pt} % Empty line
@@ -121,7 +187,7 @@ Gammelbo gård 338 {\large\textperiodcentered} 711 98 Ramsberg {\large\textperio
 %	EDUCATION
 %---------------------------------------------------------------------
 
-\pagebreak
+% \pagebreak
 
 \section{Education}
 
@@ -132,10 +198,12 @@ Gammelbo gård 338 {\large\textperiodcentered} 711 98 Ramsberg {\large\textperio
  University & \textbf{Linköping University} \hfill Linköping, Sweden\\
 %& Extra information about degree
 \end{InfoTable}
-\begin{tabularx}{0.97\linewidth}{X}
-I am currently working on finishing my master's thesis about user
-interfaces for ontology alignment.
-\end{tabularx}
+% \begin{tabularx}{0.97\linewidth}{X}
+% % I am currently working on finishing my master's thesis about user
+% % interfaces for ontology alignment.
+% \end{tabularx}
+
+\vspace{10pt}
 
 \begin{InfoTable}
  Period & \textbf{February 2014 --- July 2014}\\
@@ -181,7 +249,7 @@ Databases & MySQL, MSSQL, Oracle, Filemaker, H2 \\
 Operating Systems & Unix (Linux, Solaris, NetBSD), Mac OS, Windows \\
 Tools & Git, Atom, Visual Studio, Latex, Emacs, Eclipse, IntelliJ,
         Xcode, Trac, \\
-      &  Jenkins, Bitbucket, Jira, Confluence, SonarQube, Ansible
+      &  Jenkins, Bitbucket, Jira, Confluence, SonarQube, Ansible, Postman
 \end{tabular}
 
 %---------------------------------------------------------------------
