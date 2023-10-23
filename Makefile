@@ -13,7 +13,8 @@ cleantemp:
 cleanpdf:
 	rm -f cv-*.pdf
 
-rapport:	
+report:	
 	$(foreach var,$(NUMBERS),$(TEXER) $(FLAGS) cv-johan-angelstam.tex;)
 
-
+reportsv:	
+	$(foreach var,$(NUMBERS),$(TEXER) $(FLAGS) cv-johan-angelstam.sv.tex;)
