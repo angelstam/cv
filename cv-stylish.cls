@@ -39,6 +39,7 @@
 \RequirePackage{tabularx,colortbl} % Advanced table configurations
 \RequirePackage{fontspec} % Allows font customization
 \RequirePackage{paralist} % Provides compact lists
+\RequirePackage{parskip}
 \RequirePackage{tikz} % Rounded corners
 \AtBeginDocument{
   \setdefaultleftmargin{1em}{1em}{1em}{1em}{1em}{1em}

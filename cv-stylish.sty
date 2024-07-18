@@ -32,3 +32,9 @@
     (table.north west) rectangle (table.south east);
   \end{tikzpicture}
 }
+
+\NewEnviron{InfoBody}{%
+  \begin{adjustwidth}{0.015\linewidth}{0.015\linewidth}
+    \BODY
+  \end{adjustwidth}
+}
