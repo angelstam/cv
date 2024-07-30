@@ -47,10 +47,14 @@
   \defaultfontfeatures{Mapping=tex-text}
   \setmainfont{Adobe Garamond Pro} % Main document font
   
-  \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+  \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule\vspace{-\parskip}] % Section formatting
   
   %\pagestyle{scrheadings} % Print the headers and footers on all pages
   \pagestyle{fancy}
+
+  \clubpenalty=10000
+  \widowpenalty=10000
+  \displaywidowpenalty=10000
   
   \addtolength{\voffset}{-0.5cm} % Adjust the vertical offset - less whitespace at the top of the page
   %\addtolength{\textheight}{4cm} % Adjust the text height - less whitespace at the bottom of the page
