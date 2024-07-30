@@ -68,12 +68,13 @@
   \fancyhead[L]{}
   \fancyhead[R]{\small\@date}
   \fancyfoot[C]{\headfont
+  \vspace{0.1cm}
   \addfontfeature{LetterSpace=20.0}\fontsize{12.5}{17}\selectfont % Letter spacing and font size
   \@footer }
   \renewcommand{\headrulewidth}{0pt}
   \renewcommand{\footrulewidth}{0.2pt}
   %\addtolength{\headheight}{\baselineskip}
-  \addtolength{\footskip}{-1cm}
+  \addtolength{\footskip}{-1.1cm}
 }
 
 % declaration of options
