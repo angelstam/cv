@@ -3,6 +3,8 @@
 
 % package loading
 \usepackage{tikz}
+\usetikzlibrary{positioning}
+
 \usepackage{environ}
 
 % main code
@@ -38,4 +40,15 @@
   \begin{adjustwidth}{0.015\linewidth}{0.015\linewidth}
     \BODY
   \end{adjustwidth}
+}
+
+\newcommand*{\IconUrl}[2]{
+  \begin{tikzpicture}
+    \node (icon) {
+      \Large#1
+    };
+    \node[right=0.5em of icon] (url) {
+      #2
+    };
+  \end{tikzpicture}
 }
